@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 
 import MainHeader from './components/MainHeader.js';
-// CSS lifted from "React the complete guide Section 20"
-import './components/MainHeader.module.css';
+import Hours from './pages/Hours';
+import Create from './pages/Create';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       </header>
       <Routes>
         <Route path='/'/>
-        <Route path='/hours'/>
-        <Route path='/create'/>
+        <Route path='/hours/:storeId' element={<Hours/>}/>
+        <Route path='/create' element={<Create/>}/>
         <Route path='/update'/>
         <Route path='/delete'/>
       </Routes>

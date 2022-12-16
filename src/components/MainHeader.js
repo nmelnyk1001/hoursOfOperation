@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import classes from './MainHeader.module.css';
+// CSS lifted from "React the complete guide Section 20"
 
 const MainHeader = () => {
     return( 
@@ -7,7 +8,7 @@ const MainHeader = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink activeClassName={classes.active} to='/hours'>Hours</NavLink>
+                        <NavLink activeClassName={classes.active} to='/hours/1'>Hours</NavLink>
                     </li>
                     <li>
                         <NavLink activeClassName={classes.active} to='/create'>Create</NavLink>

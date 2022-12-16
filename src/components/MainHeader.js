@@ -14,7 +14,7 @@ const MainHeader = () => {
                         <NavLink activeClassName={classes.active} to='/create'>Create</NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName={classes.active} to='/update'>Update</NavLink>
+                        <NavLink activeClassName={classes.active} to='/update/1'>Update</NavLink>
                     </li>
                     <li>
                         <NavLink activeClassName={classes.active} to='/delete'>Delete</NavLink>

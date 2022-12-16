@@ -1,0 +1,27 @@
+import { NavLink } from 'react-router-dom';
+import classes from './MainHeader.module.css';
+
+const MainHeader = () => {
+    return( 
+        <header className={classes.header}>
+            <nav>
+                <ul>
+                    <li>
+                        <NavLink activeClassName={classes.active} to='/hours'>Hours</NavLink>
+                    </li>
+                    <li>
+                        <NavLink activeClassName={classes.active} to='/create'>Create</NavLink>
+                    </li>
+                    <li>
+                        <NavLink activeClassName={classes.active} to='/update'>Update</NavLink>
+                    </li>
+                    <li>
+                        <NavLink activeClassName={classes.active} to='/delete'>Delete</NavLink>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
+};
+
+export default MainHeader;

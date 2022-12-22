@@ -14,10 +14,10 @@ function App() {
       </header>
       <Routes>
         <Route path='/'/>
-        <Route path='/hours/:storeId'   element={<Hours/>}/>
-        <Route path='/create'           element={<Create/>}/>
-        <Route path='/update/:storeId'  element={<Update/>}/>
-        <Route path='/delete/:storeId'  element={<Delete/>}/>
+        <Route path='/hours'   element={<Hours/>}/>
+        <Route path='/create'  element={<Create/>}/>
+        <Route path='/update'  element={<Update/>}/>
+        <Route path='/delete'  element={<Delete/>}/>
       </Routes>
     </div>
   );

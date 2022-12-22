@@ -1,12 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
 const Update = () => {
-    const param = useParams();
-
     return(
         <React.Fragment>
-            <div>Store Name: {param.storeId}</div>
+            <div>
+                Store Name: 
+                <input type="text"/>
+                <button>Get Data</button>
+            </div>
             <table>
                 <tr>
                     <th>Day of Week</th>
@@ -49,6 +50,7 @@ const Update = () => {
                     <th><input type="time"></input></th>
                 </tr>
             </table>
+            <button>Update</button>
         </React.Fragment>
     );
 };

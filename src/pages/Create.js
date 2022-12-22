@@ -6,6 +6,7 @@ const Create = () => {
             <div>
                 Store Name:
                 <input type="text"></input>
+                <button>Get Data</button>
             </div>
             <table>
                 <tr>
@@ -49,6 +50,7 @@ const Create = () => {
                     <th><input type="time"></input></th>
                 </tr>
             </table>
+            <button>Create</button>
         </React.Fragment>
     );
 };

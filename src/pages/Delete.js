@@ -1,12 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
 const Delete = () => {
-    const params = useParams();
-
     return(
         <React.Fragment>
-            <h1>{params.storeId} was successfully deleted.</h1>
+            <h1>Store to delete:</h1>
+            <input type="text"></input>
+            <button>Confirm</button>
         </React.Fragment>
     );
 };
